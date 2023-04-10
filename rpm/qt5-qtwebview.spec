@@ -15,7 +15,7 @@ Source0: %{name}-%{version}.tar.bz2
 
 %{?opt_qt5_default_filter}
 
-Requires: opt-qt5-qtwebengine
+Requires: opt-qt5-qtwebengine >= %{qt_version}
 %{?_opt_qt5:Requires: %{_opt_qt5}%{?_isa} = %{_opt_qt5_version}}
 
 BuildRequires: make
